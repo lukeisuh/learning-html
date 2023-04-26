@@ -1,40 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Adds a custom name to the page name. -->
-  <title> Hello :3 </title>
-  <!-- Adds a custom icon for page. -->
-  <link rel="icon" type="image/x-icon" href="https://www.dickhead.cf/images/cat.ico">
+<title>LSWT</title>
+<link rel="icon" type="image/x-icon" href="https://www.dickhead.cf/images/cat.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
 </head>
-
-<body style="background-color:rgb(12, 12, 12);">
-</body> 
-
 <body>
 
-<style>
-    .center{
-    text-align: center;
-  }
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home Page</a>
+    <a href="test.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Test Page</a>
+    <a href="hello.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hello Page</a>
+    <a href="blank.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blank Page ig</a>
+    <a href="cat.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cat Page!!!</a>
+  </div>
 
-  .title {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-  }
-</style>
-
-<div class="center title">
-  <h1> Home :)</h1>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="test.html" class="w3-bar-item w3-button w3-padding-large">Test Page</a>
+    <a href="hello.html" class="w3-bar-item w3-button w3-padding-large">Hello Page</a>
+    <a href="blank.html" class="w3-bar-item w3-button w3-padding-large">Blank Page ig/a>
+    <a href="cat.html" class="w3-bar-item w3-button w3-padding-large">Cat Page!!!</a>
+  </div>
 </div>
 
+<!-- Header -->
+<header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 class="w3-margin w3-jumbo">Luke's Silly Website Tests.</h1>
+  <p class="w3-xlarge"> This is the home page for my html projects. 
+  <br>  Use the buttons on top of the screen to get redirecred to them. </p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="document.location='uh.html'">Do NOT Press This.</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</header>
 
-<div class="center">
-<p> holy cow </p>
-</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ </div>
+ <p><i>© 2023 lukeissilly</i></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
-
-<div class="center">
-<p><i>© 2023 lukeissilly</i></p>
-</div>
